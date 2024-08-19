@@ -1,0 +1,183 @@
+body {
+    background-color: #FAFAFA;
+margin: 0;
+padding: 0;
+}
+.app{
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title {
+    font-family: Pridi, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+}
+.container-1 {
+    margin-top: 25px;
+    width: 1123px;
+    height: 456px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
+}
+.transactionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 502px;
+}
+form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 324px;
+
+}
+.balanceContainer{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+.balanceText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line1{
+    border: 1px solid black;
+    width: 500px;
+}
+.incomeAndExpenseContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+        align-content: center;
+}
+h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    margin:20px 0;
+}
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.expenseText, 
+.incomeText
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 200px;
+}
+input, select{
+    border-radius:9px  ;
+    border: 1px solid black;
+    margin-top: 10px;
+    height: 49px;
+    box-shadow: 0 4px 4px #c6c6c6 ;
+}
+
+ input[type=submit] {
+    margin-top: 49px;
+    background-color: #005DE8 ;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+ input[type=text],
+ input[type=number]{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding-left: 20px;
+    color: solid black;
+ }
+
+select[name=transcation_Type]
+{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding-left: 20px;
+}
+h3#totalbalance{
+    color: #005DE8;
+}
+h3#totalIncome{
+    color: #00FF29;
+}
+h3#totalExpense{ 
+    color: #FF0101;
+}
+.container-2{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line2{
+    border: 1px solid black;
+    width:990px;
+}
+ul
+{
+    padding-left: 0;
+    list-style-type: none;
+}
+li{
+
+    border-radius: 9px;
+    height: 50px;
+    width: 990px;
+    border: 1px #a0a0a0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 20px;
+    border: 1px solid black;
+    margin-top: 24px;
+}
+li.minus {
+    box-shadow:  4px 4px 4px #FF0101 ;
+}
+li.plus {
+    box-shadow: 4px 4px 4px #00FF29 ;
+}
+button{
+    width: 50px;
+    height: inherit;
+    border-radius: 0px 9px 9px 0px;
+    border: 0;
+    background-color: #fafafa;
+    color: #FF0101;
+    font-size: 36px;
+}
+
+button.delete:hover{
+    color: white;
+    background-color: #FF0101;
+}
