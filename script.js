@@ -11,22 +11,13 @@ const list = document.getElementById('list');
 
 let y = new Date()
 
-const date = y.toLocaleDateString('defualt',{
-    month: 'long',
-    day: 'numeric',
-    year: "numeric"
-} )
+const date = y.toLocaleDateString("defualt", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
 
-
-
-// const dummytransaction = [
-//     { date:'Jan 4, 2024', id: 1, text: 'Flower', cash_amount: -20},
-//     { date:'Jan 5, 2024', id: 2, text: 'Salary', cash_amount: 300},
-//     { date:'Jan 6, 2024', id: 3, text: 'Book', cash_amount: -10},
-//     { date:'Jan 10, 2024', id: 4, text: 'Camera', cash_amount: 150}
-// ]
-
-let localStorageTransaction = JSON.parse(localStorage.getItem('transactions'))
+let localStorageTransaction = JSON.parse(localStorage.getItem("transactions"));
 
 let transactions = localStorage.getItem('transactions') !== null ? 
 localStorageTransaction : [];
